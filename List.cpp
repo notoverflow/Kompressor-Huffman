@@ -49,7 +49,7 @@ Node *List::deleteMin(){
 
 
 //insert node head of list
-void List::insertHead(Node *value) {
+void List:: insertHead(Node *value) {
     if(value == nullptr){
         return;
     }
@@ -126,7 +126,7 @@ Node *List::deleteOccurrenceLower() {
         tmp = head;
 
         while (tmp->next != lowerNode) {
-            tmp = tmp->next;
+            tmp = tmp -> next;
 
         }
         tmp->next = lowerNode->next;

@@ -1,5 +1,4 @@
-#include <iostream>
-#include <fstream>
+#include "iostream"
 #include "Tree.h"
 
 using namespace std;
@@ -36,6 +35,7 @@ void compress(const string& fileIn, const string& fileOut, bool printer) {
     Tree tree(fileIn,printer);
 
     tree.coding();
+
     if (printer) {
         tree.printCodes();
     }
@@ -43,8 +43,8 @@ void compress(const string& fileIn, const string& fileOut, bool printer) {
     string myString = tree.coding(text, size, compress);
     if (printer) {
         cout << myString<<"\n";
-        cout << compress;
     }
+    cout << compress;
 
     char *compressed;
     int lenght;
@@ -52,8 +52,11 @@ void compress(const string& fileIn, const string& fileOut, bool printer) {
 
 
     ofstream fout(fileOut);
+
     tree.saveTree(fout);
-    for (int i = 0; i <lenght; ++i) {
+
+    for (int i = 0; i < lenght; ++i) {
+
         fout << compressed[i];
     }
     fout.close();
@@ -100,6 +103,7 @@ void decompress(const string& fileIn, const string& fileOut, bool printer) {
 
 int main(int argc, char *argv[]) {
 
+
     switch (str2int(argv[1])) {
 
         case str2int("-c"):
@@ -118,6 +122,14 @@ int main(int argc, char *argv[]) {
             decompress(argv[2], argv[3], true);
             break;
 
+        case str2int("-h"):
+            cout << "Usage : \n\n";
+            cout << "./huffman -c <input file> <output file>\n";
+            cout << "./huffman -d <input file> <output file>\n";
+            cout << "./huffman -cv <input file> <output file>\n";
+            cout << "./huffman -dv <input file> <output file>\n";
+            break;
+
         default:
             cerr << "invalid command";
             break;
@@ -127,3 +139,4 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
+

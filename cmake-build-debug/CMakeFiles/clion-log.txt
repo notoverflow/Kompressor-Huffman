@@ -1,4 +1,4 @@
-/home/notoverflow/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/notoverflow/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/ninja/linux/ninja -G Ninja /home/notoverflow/Desktop/projet/c++/Kompressor-Huffman
+/home/notoverflow/.local/share/JetBrains/Toolbox/apps/CLion/ch-1/222.3048.7/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/notoverflow/.local/share/JetBrains/Toolbox/apps/CLion/ch-1/222.3048.7/bin/ninja/linux/ninja -G Ninja -S /home/notoverflow/Desktop/projet/c++/Kompressor-Huffman -B /home/notoverflow/Desktop/projet/c++/Kompressor-Huffman/cmake-build-debug
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/notoverflow/Desktop/projet/c++/Kompressor-Huffman/cmake-build-debug

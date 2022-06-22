@@ -132,8 +132,6 @@ void Node::saveNode(ofstream &file) {
         file << c;
     }
 
-
-
 }
 
 //decompress
@@ -150,3 +148,5 @@ void Node::loadNode(unsigned char *cTab, int &index){
         index++;
     }
 }
+
+

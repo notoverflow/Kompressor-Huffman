@@ -188,3 +188,4 @@ void Tree::decoding(unsigned char *c, int N, int &index, string &s) {
     }
 
 }
+
